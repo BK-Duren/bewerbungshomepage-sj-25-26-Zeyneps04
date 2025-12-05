@@ -19,6 +19,19 @@ html, body {
   height:100px;              ! Höhe des Kopfbereichs;
   z-index:2;                 ! Kopfbereich überlagert andere Bereiche;                
 }
+#logobereich {
+  position:fixed;               ! Position des Logos ist fest;
+  top:0;                            ! Position oben;
+  left:0;                            ! Position ganz links;
+  border: 0px solid #ccc; ! Rahmenart und -farbe;
+  background-image:url("logo.png");
+  background-repeat:no-repeat; 
+  background-size: cover;    
+  background-color:rgba(16,78,139,0);    ! Hintergrundfarbe;
+  width:200px;                 ! Breite des Kopfbereichs;
+  height:100px;                ! Höhe des Kopfbereichs; 
+  z-index:3;                      ! Logo überlagert andere Bereiche;                
+}
 
 #navibereich {
   position:fixed;            ! Position des Navibereichs immer links! - Fix;
@@ -92,7 +105,8 @@ font-weight:bold;                                                  ! Festlegung 
 }
 .header-image {
 content:url(Bild.png); // Den Link zu einem Bild kann mit Hilfe von CSS festgelegt werden;
-width:130px; height:100px;  // Größe des Bildes wird festgelegt
+width:auto; height:100px;  // Größe des Bildes wird festgelegt
 float:left;  // Das Bild wird links angezeigt. Bei float:right wird es rechts angezeigt;
 margin:5px;
+z-index:3;                 ! Kopfbereich überlagert andere Bereiche;                
 }
